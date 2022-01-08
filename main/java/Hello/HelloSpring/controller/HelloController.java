@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller // 파라미터
+@Controller // 파라미터 //컴포넌트 스캔
 public class HelloController {
     @GetMapping("hello")
     public String hello(Model model) {

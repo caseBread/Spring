@@ -3,15 +3,19 @@ package Hello.HelloSpring.service;
 import Hello.HelloSpring.domain.Member;
 import Hello.HelloSpring.repository.MemberRepository;
 import Hello.HelloSpring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+//@Service //컴포넌트 스캔
 public class memberService {
     //private final MemberRepository memberRepository = new MemoryMemberRepository();
 
     private final MemberRepository memberRepository;
 
+    //@Autowired
     public memberService(MemberRepository memberRepository) { //생성자
         this.memberRepository = memberRepository;
     }
